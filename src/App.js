@@ -9,6 +9,7 @@ import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import { Tooltip } from '@mui/material';
+import SaveIcon from '@mui/icons-material/Save';
 
 function App() {
   const [todo, setTodo] = useState({ description: '', date: '' });
@@ -55,6 +56,7 @@ function App() {
         onChange={inputChanged}
       />
       <Button variant="outlined" onClick={addTodo}>
+        <SaveIcon />
         Add
       </Button>
       <table>
